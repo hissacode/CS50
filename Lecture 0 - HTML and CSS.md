@@ -62,6 +62,7 @@ Obs: a cada opção dentro do nosso formulário abrimos um *div* (linha)
   <h1>CSS</h1>
 
 ![image](https://user-images.githubusercontent.com/124601476/220181988-7cd99cea-7a36-4a06-9e2b-51c487679af0.png)
+  
 Cascading style sheets - define o design da nossa página 
 Nos permite pegar o página em HTML e alterar o seu visual 
 
