@@ -60,5 +60,69 @@ com Phyton conseguimos pegar as infos que forem enviadas através de um formulá
 Obs: a cada opção dentro do nosso formulário abrimos um *div* (linha) 
   
   <h1>CSS</h1>
-![image](https://user-images.githubusercontent.com/124601476/220181091-c6d6b5fd-ead9-400d-9d3e-e126609d6c25.png)
 
+![image](https://user-images.githubusercontent.com/124601476/220181988-7cd99cea-7a36-4a06-9e2b-51c487679af0.png)
+Cascading style sheets - define o design da nossa página 
+Nos permite pegar o página em HTML e alterar o seu visual 
+
+  <h2>STYLE</h2>
+  Podemos designar propriedades ao nossos atributos do código HTML
+  
+  tag style dentro de TITLE no nosso código nos permite definir um estilo para uma tag específica 
+  dessa forma, não precisamos atribuir o style dentro de cada uma das tags que desejamos 
+  dentro de *style* definimos qual o elemento que será estilizado e dentro de {} informamos as alterações como *color* e *text-align*
+  
+  podemos utilizar o mesmo STYLE, para mais de um código (página) - melhoria: mover para um novo arquivo o nosso código CSS
+  criamos um código .css e vinculamos ao código .html através da tag *link* 
+  dentro de link, definimos *rel* que define o relacionamento do documento e o *href* onde puxamos o nome do arquivo .css
+  
+  *background - color* define uma cor de fundo para o texto que definimos 
+  *width* e *height* - elementos que definem TAMANHO do background
+  *padding* - preenchimento (borda) do texto dentro do background que definimos - DENTRO do elemento
+  *margin* - margem do background dentro da página web - FORA do elemento
+  
+  <h2>FONT</h2>
+  
+  *font-family* - define a fonte (arial, sans-serif) 1, 2 onde 1 é a princial e 2 é a backup caso o navegador não suporte a 1
+  *font-size* - define o tamanho da fonte em px
+  *font-weight* - define se será sublinhado, negrito ou outro atributo 
+  *border* - define a borda no div que estamos estilizando (tamanho, solido, cor)
+  *border-collapse* - junta as bordas em uma para que se pareça de fato com uma tabela
+  
+  *ID*
+  para alterarmos apenas alguns elementos em específico de acordo com o style que desejamos, devemos atribuir um ID ao elemento HTML
+  no cód HTML utilizamos id = ""
+  e no código CSS utilizamos #
+  
+  *CLASS*
+  uma forma de dar um nome a um elemento HTML que não é exclusivo
+  no cód HTML utilizamos class = ""
+  e no código CSS utilizamos .
+  
+  <h2>ESPECIFICIDADE</h2>
+  elementos que seguem uma ordem particular 
+  1. inline
+  2. id
+  3. class
+  4. type
+  
+  se dentro do código, definimos uma tag onde o div deve ser azul, e um id (como #foo) onde o div deve ser vermelho, o id sobrepõe a regra da tag e o id é vermelho. 
+  o id é mais específico que a tag
+  
+  <h2>CSS SELECTORS</h2>
+  
+  ![image](https://user-images.githubusercontent.com/124601476/220190152-1c33121e-d895-45e2-890b-2af448c873e4.png)
+  
+  ul > li color blue - isso significa que apenas os itens li que estejam dentro de ul, serão azuis 
+  os li fora, permanecem 
+  
+  <h2>ATRIBUTO</h2>
+  quando inserimos um atributo como [] podemos criar uma regra específica para ele. 
+  Exemplo: definimos que todos os elementos dentro de "a" serão azul porém apenas um elemento específico HTML será vermelho. 
+  para esse "específico" utilizamos []
+  
+  <h2>PSEUDOCLASSE</h2>
+  exemplo: modificamos o elemento quando o cliente passa o cursor em cima de alguma informação específica
+  para isso usamos o *hover*, onde definimos uma condição para quando estivermos com o cursor do mouse em cima daquela informação (no nosso exemplo, o botão)
+ 
+  
