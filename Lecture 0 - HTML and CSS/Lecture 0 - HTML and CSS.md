@@ -126,4 +126,37 @@ Nos permite pegar o página em HTML e alterar o seu visual
   exemplo: modificamos o elemento quando o cliente passa o cursor em cima de alguma informação específica
   para isso usamos o *hover*, onde definimos uma condição para quando estivermos com o cursor do mouse em cima daquela informação (no nosso exemplo, o botão)
  
+  <h1>RESPONSIVE DESIGN</h1>
+  Projetamos as páginas web de formas responsivas - onde se adaptam em qualquer dispositivo (celular, PC, tablet..)
+  
+  <h2>Viewport</h2>
+  Janela de visualização - parte visual da nossa tela que o usuário pode ver. 
+  para ter certeza de que em um dispositivo móvel podemos visualizar a página assim como via web, utilizamos o código: 
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+  dessa forma a largura da visualização terá o tamanho do próprio dispositivo, ela se adapta sozinha. 
+  ![image](https://user-images.githubusercontent.com/124601476/222608879-f364e29c-f380-43fd-a838-7f5d68b24da7.png)
+
+  <h2>Media Queries</h2>
+  Media Types: print, screen, ...
+  Media Features: height, width, orientation, ...
+  -> trata-se de controlar a aparência da nossa página dependendo de como renderizamos ela, define o tamanho da tela dependendo da renderização. 
+  para utilizar essa sintaxe utilizamos @media e dentro de () definimos as especificidades - exemplo: tamanho; e depois mais especificidades {} em body 
+  essa tecnologia nos permite escolher como a nossa página irá ser exibida em vários tipos diferentes de dispositivos. 
+  podemos controlar qualquer propriedade CSS. 
+  
+  <h2>Flexbox</h2>
+   é útil quando temos vários elementos á serem exibidos em uma única página web, em diferentes dispositivos.
+   evita que, ao acessar uma pág web programada para pc, em um celular por exemplo, os itens sejam encolhidos ou permaneçam exatamente do mesmo tamanho e usuário precise arrastar. 
+  o Flexbox de forma automática, irá reordenar os elementos de acordo com o tamanho da página. 
+  ![image](https://user-images.githubusercontent.com/124601476/222609764-f712017f-b41e-429b-bd07-2eb8b17a1ca9.png)
+  para isso utilizamos:
+  display: flex
+  flex-wrap: wrap
+  
+  para grid 
+  display: grid
+  e determinamos também grid-column-gap, grid-row-gap e grid-template-columns (definido em pixels, podemos definir que será auto)
+  
+  Basicamente, o uso do responsive design garante que as páginas tenham uma boa aparência independente do tipo de navegador ou dispositivo que está sendo utilizado. 
+  
   
