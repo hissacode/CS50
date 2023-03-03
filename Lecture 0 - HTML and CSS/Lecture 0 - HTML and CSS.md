@@ -134,6 +134,7 @@ Nos permite pegar o página em HTML e alterar o seu visual
   para ter certeza de que em um dispositivo móvel podemos visualizar a página assim como via web, utilizamos o código: 
     meta name="viewport" content="width=device-width, initial-scale=1.0"
   dessa forma a largura da visualização terá o tamanho do próprio dispositivo, ela se adapta sozinha. 
+  
   ![image](https://user-images.githubusercontent.com/124601476/222608879-f364e29c-f380-43fd-a838-7f5d68b24da7.png)
 
   <h2>Media Queries</h2>
@@ -148,7 +149,9 @@ Nos permite pegar o página em HTML e alterar o seu visual
    é útil quando temos vários elementos á serem exibidos em uma única página web, em diferentes dispositivos.
    evita que, ao acessar uma pág web programada para pc, em um celular por exemplo, os itens sejam encolhidos ou permaneçam exatamente do mesmo tamanho e usuário precise arrastar. 
   o Flexbox de forma automática, irá reordenar os elementos de acordo com o tamanho da página. 
+  
   ![image](https://user-images.githubusercontent.com/124601476/222609764-f712017f-b41e-429b-bd07-2eb8b17a1ca9.png)
+  
   para isso utilizamos:
   display: flex
   flex-wrap: wrap
