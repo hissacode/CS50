@@ -162,4 +162,56 @@ Nos permite pegar o página em HTML e alterar o seu visual
   
   Basicamente, o uso do responsive design garante que as páginas tenham uma boa aparência independente do tipo de navegador ou dispositivo que está sendo utilizado. 
   
+  <h1>BOOTSTRAP</h1>
+  
+  ![image](https://user-images.githubusercontent.com/124601476/222628746-01161346-10d3-4e95-8aaa-7401bbed5c27.png)
+
+  Nada mais é do que um repositório de códigos CSS, para que não precisemos escrever o código do zero, apenas extraímos da biblioteca. 
+  devemos acessar getbostrap.com > DOCS > Customize > Components 
+  precisamos copiar o link CSS e colocar no topo do nosso arquivo, e ele irá estilizar para manter uma melhor aparência na nossa página. 
+  *Inserir em title* > link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
+  Nós da acesso à diversos tipos de componentes, podendo adicionar alertas, por exemplo, para melhorar a página de forma rápida. 
+  Também, permite que as págimas sejam *RESPONSIVAS* (funcionem via dispositivo móvel) utilizando o modelo de coluna. 
+  Divide sua página e cada linha em 12 colunas (consequentemente os DIVs também)
+  o tamanho das colunas é contabilizado de 1-12: col-6, col-3 
+o bootstrap basicamente faz com que essas colunas se adaptem ao tamanho da tela. 
+  col-lg = large screen
+  col-sm = small screen
+  
+  <h1>SASS</h1>
+  
+  ![image](https://user-images.githubusercontent.com/124601476/222628937-c98a2535-52e3-49f6-a1db-61ac7697bc25.png)
+
+  *Minimizar redundância*
+  Exemplo: realizamos um código com 2 listas, sendo ambas da mesma cor alterando apenas o tamanho. 
+  Para evitar redundância neste caso, utilizamos o SASS. 
+  SASS é uma linguagem de extensão do CSS> nos permite manipular o CSS de maneira rápida e remover repetições de código. 
+  criamos o arquivo utilizando .scss
+  para criar varíaveis utilizamos > $
+  exemplo: variável chamada color será vermelha $color: red;
+  sempre que quisermos utilizar a cor vermelha, basta chamar a variável. 
+  utilizando varíaveis como essa, evitamos a repetição, e caso seja necessário alterar algo, será muito mais rápido. 
+  
+  para vincular esse arquivo no código .html seguimos o mesmo processo do .css
+  link rel="stylesheet" href="arquivo.scss"
+  
+  Navegadores padrão NÃO entendem SASS, então precisamos compilar o arquivo .scss para .css 
+  (necessário instalar o SASS para tal) 
+  para compilar no prompt: 
+  sass arquivo.scss:arquivo.css
+  Caso o arquivo SASS seja alterado, o arquivo CSS não é alterado automaticamente, devemos compilar novamente. 
+  para não precisarmos compilar no prompt todas as vezes, podemos utilizar o comando:
+  --watch arquivo.scss:arquivo.css
+  
+  O SASS também tem a capacidade de alinhar seletores css dentro de outros seletores css 
+  exemplo > temos parágrafos dentro de um div, e fora dele também 
+  com o SASS, conseguimos estilizar determinando uma cor por exemplo, e seria aplicado apenas no parágrafo dentro do div
+  
+  *Herança* - seletores relacionados entre si 
+  exemplo: temos 3 botões, cada um com uma mensagem diferente, e com uma cor 
+  porém todos na mesma fonte, mesmo tamanho, mesma fonte. 
+  com o SASS definimos com o sinal de % como todos os botões serão, com o mesmo padrão. 
+  para cada um dos botões criamos uma classe com o sinal de . 
+  e definimos dentro dessa classe {} com o código @extend e chamando a variante definida com o sinal de % qual será a sua informação adicional 
+  nesse caso, seria a cor (bkg color)
   
