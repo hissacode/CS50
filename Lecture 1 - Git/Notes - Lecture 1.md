@@ -17,3 +17,7 @@ Por fim, GIT nos permite resgatar versões antigas do nosso código.
 <h2>Comandos</h2>
 git clone -> Um comando que utilizamos para pegar um repositório na internet e baixá-lo em nosso próprio computador. 
 git clone + url que queremos adicionar
+ls -> lista todos os arquivos dentro de um diretório ou pasta
+cd -> para mudar para um diretório ou pasta 
+touch hello.html -> irá criar um arquivo chamado hello
+code . -> abrir o arquivo dentro de um editor de código
