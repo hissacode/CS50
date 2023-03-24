@@ -21,3 +21,12 @@ ls -> lista todos os arquivos dentro de um diretório ou pasta
 cd -> para mudar para um diretório ou pasta 
 touch hello.html -> irá criar um arquivo chamado hello
 code . -> abrir o arquivo dentro de um editor de código
+savepoints: chamados de commits 
+git add -> usamos para rastrear o arquivo, usando esse comando na próxima fez que fizermos um commit será salvo
+git commit -m "message" -> comando utilizando para salvar as alterações feitas no arquivo
+git commit -am -> comando para salvar TODOS as arquivos alterados 
+git status -> status do repositório - irá nos mostrar a diferença do repositório local para o online 
+git push -> enviar os comandos que foram utilizados localmente (na máquina) para o repositório online 
+git pull -> baixar os comandos do repositório online para a nossa versão local (máquina)
+
+Guia prático -> https://rogerdudler.github.io/git-guide/index.pt_BR.html
