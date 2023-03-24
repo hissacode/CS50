@@ -13,3 +13,6 @@ GIT também nos permite realizar testes no código, sem perder o original.
 Podemos fazer alterações no código em um "branch" separado. 
 
 Por fim, GIT nos permite resgatar versões antigas do nosso código. 
+
+<h2>Comandos</h2>
+git clone -> Um comando que utilizamos para pegar um repositório na internet e baixá-lo em nosso próprio computador. 
